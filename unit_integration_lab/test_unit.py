@@ -16,7 +16,7 @@ def test_withdraw_insufficient():
         withdraw(500, 1000)
 
 def test_calculate_interest_valid():
-    assert round( calculate_interest(1000, 10, 2),2) == 1210
+    assert round(calculate_interest(1000, 10, 2),2) == 1210.0
 
 def test_calculate_interest_negative_balance():
     with pytest.raises(ValueError):
